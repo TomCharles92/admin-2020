@@ -3,6 +3,8 @@ import App from './App.vue'
 import store from './store'
 import router from './router'
 import './plugins/element.js'
+import './plugins/axios'
+import './api/index'
 
 Vue.config.productionTip = false
 
