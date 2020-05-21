@@ -24,6 +24,7 @@ export default {
   methods: {
     login() {
       this.$axios.get("login.json").then(res => console.log(res));
+      this.$router.push("/");
     }
   }
 };
