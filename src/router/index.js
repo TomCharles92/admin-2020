@@ -4,10 +4,11 @@ import Layout from '@/layout'
 
 Vue.use(VueRouter)
 
+import nestedRouter from './modules/nested'
+
 const routes = [
   {
     path: '/Login',
-    name: 'Login',
     component: () => import('@/views/Login')
   },
   {
@@ -16,18 +17,16 @@ const routes = [
     component: Layout,
     children: [
       {
-        path: '/Home',
-        name: 'Home',
+        path: 'home',
         component: () => import('@/views/Home')
       },
-      {
-        path: '/Test',
-        name: 'Test',
-        component: () => import('@/views/Test')
-      },
+      // {
+      //   path: 'test',
+      //   component: () => import('@/views/Test')
+      // },
     ]
-  }
-
+  },
+  nestedRouter
 ]
 
 const router = new VueRouter({
