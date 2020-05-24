@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 
 import nestedRouter from './modules/nested'
 
-const routes = [
+export const constantRoutes = [
   {
     path: '/Login',
     component: () => import('@/views/Login')
@@ -30,7 +30,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes
+  routes: constantRoutes
 })
 
 export default router
