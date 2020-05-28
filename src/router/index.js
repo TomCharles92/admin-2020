@@ -9,6 +9,7 @@ import nestedRouter from './modules/nested'
 export const constantRoutes = [
   {
     path: '/Login',
+    hidden: true,
     component: () => import('@/views/Login')
   },
   {
@@ -18,6 +19,7 @@ export const constantRoutes = [
     children: [
       {
         path: 'home',
+        meta: { title: 'home'},
         component: () => import('@/views/Home')
       },
       // {

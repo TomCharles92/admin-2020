@@ -5,16 +5,16 @@
     text-color="#fff"
     active-text-color="#ffd04b"
   >
-    <MenuItem v-for="route in constantRoutes" :key="route.path" :item="route" />
+    <SidebarItem v-for="route in constantRoutes" :key="route.path" :item="route" :base-path="route.path" />
   </el-menu>
 </template>
 
 <script>
-import MenuItem from "./MenuItem";
+import SidebarItem from "./SidebarItem";
 import { constantRoutes } from "@/router";
 export default {
   name: "Sidebar",
-  components: { MenuItem },
+  components: { SidebarItem },
   computed: {
     constantRoutes() {
       return constantRoutes;
