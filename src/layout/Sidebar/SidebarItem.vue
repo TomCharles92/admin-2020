@@ -90,7 +90,7 @@ export default {
       // if (isExternal(this.basePath)) {
       //   return this.basePath
       // }
-      return path.resolve(this.basePath, routePath);
+      return path.resolve(this.basePath, routePath); // nodejs的路径解析
     }
   }
 };
