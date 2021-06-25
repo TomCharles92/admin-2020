@@ -6,6 +6,7 @@
     <p>local push 1</p>
     <p>local push 2</p>
     <p>test push 1</p>
+    <p>test push 2</p>
   </div>
 </template>
 
